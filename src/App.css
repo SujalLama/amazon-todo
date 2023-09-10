@@ -1,0 +1,151 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.container h2 {
+  border-bottom: 2px solid lightcoral;
+  padding-bottom: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.todo-item {
+  width: 100%;
+  background: #444;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  position: relative;
+}
+
+.todo-item h3 {
+  margin: 0;
+  line-height: normal;
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.todo-item p {
+  margin: 0;
+  line-height: normal;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.form textarea {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  height: 100px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.form button {
+  padding: 0.8rem 1rem;
+  width: 100%;
+}
+
+.btn {
+  padding: .3rem 0.6rem;
+  font-size: 0.8rem;
+  transition: transform 300 ease-in;
+}
+
+.btn--del {
+  background-color: lightcoral;
+  margin-right: 0.6rem;
+}
+
+.btn-edit {
+  background-color: green;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: transform 300 ease-in;
+}
+
+.error {
+  color: red;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h2 {
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .container--left {
+    width: 50%;
+    margin-right: 2rem;
+  }
+  
+  .container--right {
+    width: 50%;
+  }
+
+  .form {
+    width: 70%;
+  }
+
+  .todo-item {
+    width: 40%;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .todo-item {
+    width: 30%;
+  }
+}
+

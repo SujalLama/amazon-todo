@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "amazontodo",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
