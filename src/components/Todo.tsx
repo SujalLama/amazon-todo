@@ -114,8 +114,8 @@ function Todo({signOut, user}: WithAuthenticatorProps) {
           <h2>Add Task</h2>
           <form className="form" onSubmit={(e) => e.preventDefault()}>
             {error && <span className='error'>{error}</span>}
-            <input  className="input" value={input} onChange={(e) => {setError(''); setInput(e.target.value)}} />
-            <textarea className="input" value={desc} onChange={(e) => {setError(''); setDesc(e.target.value)}} /><br />
+            <input placeholder='Enter Task' className="input" value={input} onChange={(e) => {setError(''); setInput(e.target.value)}} />
+            <textarea placeholder='Enter Task description' className="input" value={desc} onChange={(e) => {setError(''); setDesc(e.target.value)}} /><br />
             {!todo ? <button type="button" onClick={createTodoItem}>Add Todo</button> : <button type="button" onClick={editTodoItem}>Edit Todo</button>}
           </form>
         </div>
